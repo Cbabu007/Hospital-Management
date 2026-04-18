@@ -1,0 +1,133 @@
+.login-mgmt-page {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	padding: 8px;
+}
+
+.login-mgmt-title {
+	margin: 0;
+	font-size: 26px;
+	color: #2f1f42;
+}
+
+.login-mgmt-toolbar {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.login-mgmt-search-wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	width: min(100%, 280px);
+}
+
+.login-mgmt-search-wrap label {
+	font-size: 13px;
+	font-weight: 600;
+	color: #4a3360;
+	text-align: right;
+}
+
+.login-mgmt-search-wrap input {
+	height: 38px;
+	border: 1px solid #ceb4e2;
+	border-radius: 8px;
+	padding: 0 10px;
+	font-size: 14px;
+}
+
+.login-mgmt-search-wrap input:focus {
+	outline: none;
+	border-color: #8b56af;
+	box-shadow: 0 0 0 2px #eadcf5;
+}
+
+.login-mgmt-table-wrap {
+	overflow: auto;
+	border: 1px solid #e2d3ef;
+	border-radius: 12px;
+	background: #fff;
+}
+
+.login-mgmt-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 14px;
+}
+
+.login-mgmt-table th,
+.login-mgmt-table td {
+	border: 1px solid #eadcf5;
+	padding: 10px;
+	white-space: nowrap;
+	vertical-align: middle;
+	text-align: left;
+}
+
+.login-mgmt-table th {
+	background: #f4ebfb;
+	color: #46295d;
+	font-weight: 700;
+}
+
+.login-mgmt-empty {
+	text-align: center;
+	color: #6f5b83;
+	padding: 16px;
+}
+
+.login-mgmt-cell-input {
+	height: 34px;
+	min-width: 140px;
+	border: 1px solid #ccb3df;
+	border-radius: 6px;
+	padding: 0 8px;
+	font-size: 13px;
+}
+
+.login-mgmt-action-cell {
+	min-width: 120px;
+}
+
+.login-mgmt-icon-btn {
+	width: 32px;
+	height: 32px;
+	border: none;
+	border-radius: 7px;
+	margin-right: 6px;
+	cursor: pointer;
+	color: #fff;
+}
+
+.login-mgmt-icon-btn.edit {
+	background: #3f78c7;
+}
+
+.login-mgmt-icon-btn.delete {
+	background: #c23e3e;
+}
+
+.login-mgmt-icon-btn.save {
+	background: #2f9f5a;
+}
+
+.login-mgmt-icon-btn.cancel {
+	background: #8a6b58;
+}
+
+@media (max-width: 700px) {
+	.login-mgmt-toolbar {
+		justify-content: stretch;
+	}
+
+	.login-mgmt-search-wrap {
+		width: 100%;
+	}
+
+	.login-mgmt-search-wrap label {
+		text-align: left;
+	}
+}

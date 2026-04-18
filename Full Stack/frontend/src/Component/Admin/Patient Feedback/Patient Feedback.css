@@ -1,0 +1,118 @@
+.pf-page {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 10px 14px;
+}
+
+.pf-box {
+	width: min(100%, 1020px);
+	background: #fff;
+	border: 1px solid #e7daf3;
+	border-radius: 16px;
+	padding: 16px;
+	box-shadow: 0 6px 18px rgba(49, 20, 78, 0.08);
+}
+
+.pf-title {
+	margin: 0 0 14px;
+	font-size: 26px;
+	color: #311a4a;
+}
+
+.pf-filter-row {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 12px;
+}
+
+.pf-filter-row label {
+	font-size: 14px;
+	font-weight: 600;
+	color: #4c3464;
+}
+
+.pf-filter-row input {
+	height: 38px;
+	border: 1px solid #cbb2e0;
+	border-radius: 8px;
+	padding: 0 10px;
+	font-size: 14px;
+}
+
+.pf-table-wrap {
+	overflow-x: auto;
+}
+
+.pf-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 14px;
+}
+
+.pf-table th,
+.pf-table td {
+	border: 1px solid #eadcf5;
+	padding: 10px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.pf-table th {
+	background: #f4ecfc;
+	font-weight: 700;
+	color: #3a2055;
+	white-space: nowrap;
+}
+
+.pf-empty-row {
+	text-align: center;
+	color: #6a587d;
+	padding: 16px;
+}
+
+.pf-pagination {
+	margin-top: 12px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 10px;
+}
+
+.pf-page-btn {
+	border: 1px solid #cbb2e0;
+	background: #fff;
+	color: #452b5b;
+	border-radius: 7px;
+	padding: 6px 10px;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.pf-page-btn:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.pf-page-text {
+	font-size: 13px;
+	font-weight: 600;
+	color: #4c3464;
+}
+
+@media (max-width: 700px) {
+	.pf-page {
+		padding: 8px;
+	}
+
+	.pf-box {
+		padding: 12px;
+	}
+
+	.pf-filter-row {
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+}

@@ -1,0 +1,182 @@
+.ap-page {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 10px 14px;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.ap-page::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+	display: none;
+}
+
+.ap-box {
+	width: min(100%, 1100px);
+	background: #fff;
+	border: 1px solid #e7daf3;
+	border-radius: 16px;
+	padding: 16px;
+	box-shadow: 0 6px 18px rgba(49, 20, 78, 0.08);
+}
+
+.ap-title {
+	margin: 0 0 14px;
+	font-size: 26px;
+	color: #311a4a;
+}
+
+.ap-filter-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 12px;
+}
+
+.ap-filter-left,
+.ap-filter-right {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.ap-filter-row label {
+	font-size: 14px;
+	font-weight: 600;
+	color: #4c3464;
+}
+
+.ap-filter-row input,
+.ap-filter-row select {
+	height: 38px;
+	border: 1px solid #cbb2e0;
+	border-radius: 8px;
+	padding: 0 10px;
+	font-size: 14px;
+}
+
+.ap-table-wrap {
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.ap-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 14px;
+}
+
+.ap-table th,
+.ap-table td {
+	border: 1px solid #eadcf5;
+	padding: 10px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.ap-table th {
+	background: #f4ecfc;
+	font-weight: 700;
+	color: #3a2055;
+	white-space: nowrap;
+}
+
+.ap-empty-row {
+	text-align: center;
+	color: #6a587d;
+	padding: 16px;
+}
+
+.ap-action-cell {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	white-space: nowrap;
+}
+
+.ap-status-btn {
+	border: none;
+	border-radius: 8px;
+	padding: 7px 10px;
+	font-size: 13px;
+	font-weight: 700;
+	cursor: pointer;
+	color: #2f213f;
+}
+
+.ap-status-btn.confirm {
+	background: #f3d442;
+}
+
+.ap-status-btn.booked {
+	background: #1f9a48;
+	color: #fff;
+	cursor: default;
+}
+
+.ap-status-btn.cancelled {
+	background: #d6d6d6;
+	color: #463f4f;
+}
+
+.ap-cancel-icon-btn {
+	width: 30px;
+	height: 30px;
+	border: none;
+	border-radius: 7px;
+	background: #ca3f3f;
+	color: #fff;
+	cursor: pointer;
+}
+
+.ap-pagination {
+	margin-top: 12px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 10px;
+}
+
+.ap-page-btn {
+	border: 1px solid #cbb2e0;
+	background: #fff;
+	color: #452b5b;
+	border-radius: 7px;
+	padding: 6px 10px;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.ap-page-btn:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.ap-page-text {
+	font-size: 13px;
+	font-weight: 600;
+	color: #4c3464;
+}
+
+@media (max-width: 700px) {
+	.ap-page {
+		padding: 8px;
+	}
+
+	.ap-box {
+		padding: 12px;
+	}
+
+	.ap-filter-row {
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.ap-filter-left,
+	.ap-filter-right {
+		flex-wrap: wrap;
+	}
+}
